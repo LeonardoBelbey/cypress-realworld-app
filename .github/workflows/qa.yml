@@ -7,6 +7,7 @@ on:
 jobs:
   run-candidate-tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -22,13 +23,13 @@ jobs:
         run: yarn
 
       - name: Start application
-        run: yarn dev &
+        run: yarn dev > app.log 2>&1 &
 
       - name: Wait for app
         run: npx wait-on http://localhost:3000
 
       - name: Run Smoke Tests
-        run: npx cypress run --spec "cypress/tests/candidate/e2e/smoke/*.spec.ts"
+        run: npx cypress run --browser chrome --spec "cypress/tests/candidate/e2e/smoke/*.spec.ts"
 
       - name: Upload screenshots if failed
         if: failure()
@@ -43,3 +44,10 @@ jobs:
         with:
           name: videos
           path: cypress/videos
+
+      - name: Upload app log if failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-log
+          path: app.log
