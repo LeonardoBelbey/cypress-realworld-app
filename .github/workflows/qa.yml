@@ -1,0 +1,45 @@
+name: QA Candidate Tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-candidate-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Start application
+        run: yarn dev &
+
+      - name: Wait for app
+        run: npx wait-on http://localhost:3000
+
+      - name: Run Smoke Tests
+        run: npx cypress run --spec "cypress/tests/candidate/e2e/smoke/*.spec.ts"
+
+      - name: Upload screenshots if failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: cypress/screenshots
+
+      - name: Upload videos if failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: cypress/videos
