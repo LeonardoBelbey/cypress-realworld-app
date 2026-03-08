@@ -185,55 +185,123 @@ Exit Criteria:
 
 # Manual Test Cases
 
-### TC-001 Login with valid credentials
+### TC-001 - Login with valid credentials
 
-Precondition:
-User exists in system
+**Preconditions:**
+- User account exists in the system
+- Application is available
+- User is logged out
 
-Steps:
-1. Navigate to login page
-2. Enter username and password
-3. Click login
+**Steps:**
+1. Navigate to the sign in page
+2. Enter a valid username
+3. Enter the correct password
+4. Click the sign in button
 
-Expected Result:
-User is authenticated and redirected to dashboard.
-
----
-
-### TC-002 Login with invalid password
-
-Expected Result:
-System shows authentication error.
+**Expected Result:**
+- User is successfully authenticated
+- User is redirected to the authenticated home page
+- Account balance and navigation menu are visible
 
 ---
 
-### TC-003 Create bank account
+### TC-002 - Login with invalid password
 
-Expected Result:
-New account appears in account list.
+**Preconditions:**
+- User account exists in the system
+- Application is available
+- User is logged out
+
+**Steps:**
+1. Navigate to the sign in page
+2. Enter a valid username
+3. Enter an invalid password
+4. Click the sign in button
+
+**Expected Result:**
+- Authentication is rejected
+- User remains on the sign in page
+- Error message is displayed to the user
+
+---
+
+### TC-003 - Create bank account
+
+**Preconditions:**
+- User is authenticated
+- User has access to the bank accounts area
+- Bank account form is available
+
+**Steps:**
+1. Navigate to the bank account creation page
+2. Enter a valid bank name
+3. Enter a valid routing number
+4. Enter a valid account number
+5. Submit the form
+
+**Expected Result:**
+- New bank account is successfully created
+- User is redirected or returned to the bank accounts list
+- The newly created account is visible in the list
 
 ---
 
-### TC-004 Delete bank account
+### TC-004 - Delete bank account
 
-Expected Result:
-Account is removed from list.
+**Preconditions:**
+- User is authenticated
+- At least one bank account exists for the user
+- Bank accounts list is available
+
+**Steps:**
+1. Navigate to the bank accounts page
+2. Locate an existing bank account
+3. Click the delete action for that account
+
+**Expected Result:**
+- Bank account is successfully removed
+- Deleted account no longer appears in the bank accounts list
+
+---
+
+### TC-005 - Send payment to another user
+
+**Preconditions:**
+- User is authenticated
+- At least one recipient user is available
+- User has access to create a new transaction
+
+**Steps:**
+1. Start a new transaction
+2. Select another user as recipient
+3. Enter a valid payment amount
+4. Enter a payment description
+5. Submit the payment
+
+**Expected Result:**
+- Payment is successfully created
+- Transaction confirmation is displayed
+- The new transaction appears in the feed/history
 
 ---
 
-### TC-005 Send payment
+### TC-006 - Validate transaction in feed
 
-Expected Result:
-Transaction appears in user feed.
+**Preconditions:**
+- User is authenticated
+- A transaction has been previously created
+- Transaction feed is available
 
----
+**Steps:**
+1. Navigate to the home page or transaction feed
+2. Locate the recently created transaction
+3. Review displayed transaction details
 
-### TC-006 Validate transaction history
-
-Expected Result:
-Transaction history displays correct values.
-
----
+**Expected Result:**
+- Transaction is visible in the feed
+- Recipient information is correct
+- Amount is correct
+- Description/note matches the submitted value
 
 # Traceability Model
 
