@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 150953,
+      "balance": 145953,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "410-786-2112",
       "avatar": "https://avatars.dicebear.com/api/human/GjWovtg2hr.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 93026,
+      "balance": 98026,
       "createdAt": "2023-04-23T13:52:10.979Z",
       "modifiedAt": "2024-03-07T09:07:46.709Z"
     },
@@ -253,6 +253,94 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "vtuNFcN2E",
+      "uuid": "dc59e320-0c2a-4677-9b63-49fe4662a842",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772989657918-3614",
+      "accountNumber": "796962159",
+      "routingNumber": "917217819",
+      "isDeleted": false,
+      "createdAt": "2026-03-08T17:07:45.399Z",
+      "modifiedAt": "2026-03-08T17:07:45.399Z"
+    },
+    {
+      "id": "z-XKvc322",
+      "uuid": "60febe99-2a2e-4d08-8e33-7856f3464c2e",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772989787630-5270",
+      "accountNumber": "789016516",
+      "routingNumber": "868373157",
+      "isDeleted": false,
+      "createdAt": "2026-03-08T17:09:50.895Z",
+      "modifiedAt": "2026-03-08T17:09:50.895Z"
+    },
+    {
+      "id": "yQAI8VtZm",
+      "uuid": "1573f491-4311-4d31-ae3a-45841bfa63e8",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772989985032-5404",
+      "accountNumber": "768225108",
+      "routingNumber": "814221197",
+      "isDeleted": false,
+      "createdAt": "2026-03-08T17:13:08.117Z",
+      "modifiedAt": "2026-03-08T17:13:08.117Z"
+    },
+    {
+      "id": "4zx61n7Un",
+      "uuid": "09a3c743-41ed-4932-96f8-e11d25bd4f50",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772990097537-9962",
+      "accountNumber": "509250681",
+      "routingNumber": "779293953",
+      "isDeleted": false,
+      "createdAt": "2026-03-08T17:15:00.388Z",
+      "modifiedAt": "2026-03-08T17:15:00.388Z"
+    },
+    {
+      "id": "VnPEOBvvO",
+      "uuid": "c67f77cf-58b5-4998-b880-00028a7d8f45",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772990173641-9367",
+      "accountNumber": "936366399",
+      "routingNumber": "973937029",
+      "isDeleted": true,
+      "createdAt": "2026-03-08T17:16:16.582Z",
+      "modifiedAt": "2026-03-08T17:16:16.582Z"
+    },
+    {
+      "id": "aggDHEVih",
+      "uuid": "178281e1-8c53-487b-bec3-0059bafbcff1",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772990269439-7791",
+      "accountNumber": "125292880",
+      "routingNumber": "538776738",
+      "isDeleted": true,
+      "createdAt": "2026-03-08T17:17:52.403Z",
+      "modifiedAt": "2026-03-08T17:17:52.403Z"
+    },
+    {
+      "id": "HIdV6CZKO",
+      "uuid": "f2d95ddd-4058-45e1-b0af-9a1289c02e61",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772990304179-8602",
+      "accountNumber": "891023814",
+      "routingNumber": "117959828",
+      "isDeleted": true,
+      "createdAt": "2026-03-08T17:18:31.704Z",
+      "modifiedAt": "2026-03-08T17:18:31.704Z"
+    },
+    {
+      "id": "QcWqqAK8Q",
+      "uuid": "95b150fa-0ab7-4ba8-b1b4-14ca4ad225eb",
+      "userId": "uBmeaz5pX",
+      "bankName": "Bank 1772990437621-6494",
+      "accountNumber": "477731058",
+      "routingNumber": "756737909",
+      "isDeleted": true,
+      "createdAt": "2026-03-08T17:20:41.423Z",
+      "modifiedAt": "2026-03-08T17:20:41.423Z"
     }
   ],
   "transactions": [
@@ -9855,6 +9943,30 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
+    },
+    {
+      "id": "Fp9icJwgm",
+      "uuid": "75f5e82b-7b33-4449-880c-e31c5a47e00e",
+      "amount": 2500,
+      "description": "payment-1772990991093-4573",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2026-03-08T17:29:54.605Z",
+      "modifiedAt": "2026-03-08T17:29:54.605Z"
+    },
+    {
+      "id": "5jZBHBoGB",
+      "uuid": "2c9d7216-0b6e-4740-85dc-d78b13837092",
+      "amount": 2500,
+      "description": "payment-1772991076074-3197",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2026-03-08T17:31:18.968Z",
+      "modifiedAt": "2026-03-08T17:31:18.968Z"
     }
   ],
   "likes": [
@@ -10431,6 +10543,26 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
+    },
+    {
+      "id": "HcsgXOebUY",
+      "uuid": "6fe2d189-a798-4111-b094-68c55aaab1f0",
+      "userId": "GjWovtg2hr",
+      "transactionId": "Fp9icJwgm",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2026-03-08T17:29:54.650Z",
+      "modifiedAt": "2026-03-08T17:29:54.650Z"
+    },
+    {
+      "id": "7zzl7ajL2c",
+      "uuid": "29b45378-0472-4aa4-aec9-99affb339ee1",
+      "userId": "GjWovtg2hr",
+      "transactionId": "5jZBHBoGB",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2026-03-08T17:31:18.984Z",
+      "modifiedAt": "2026-03-08T17:31:18.984Z"
     }
   ],
   "banktransfers": [
